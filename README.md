@@ -2,8 +2,6 @@
 
 This is an interactive Streamlit web application for visualizing **Volatility Arbitrage** opportunities using heatmaps of **Implied Volatility (IV)** minus **Realized Volatility (RV)** for both call and put options.
 
-![App Preview](https://volarbsurface-a8qylzum3tqlwdnzfxxrtj.streamlit.app/_static/screenshot.png)
-
 > 🔗 [**Launch the App**](https://volarbsurface-a8qylzum3tqlwdnzfxxrtj.streamlit.app/)
 
 ---
