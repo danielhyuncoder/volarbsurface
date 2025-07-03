@@ -41,8 +41,9 @@ def calculate_matrix(x_labels: np.array, y_labels: np.array, y_axis: str, realiz
         row=[]
         for i in x_labels:
             if "Risk" in y_axis:
-               row.append(np.round(implied_volatility(i,K,T,j,option_price, option_type=option_type)-realized_volatility), 2)
+               row.append(np.round(implied_volatility(i, K, T, j, option_price, option_type=option_type) - realized_volatility, 2))
+
             else:
-               row.append(np.round(implied_volatility(i,K,i,r,option_price, option_type=option_type)-realized_volatility), 2)
+               row.append(np.round(implied_volatility(i,K,i,r,option_price, option_type=option_type)-realized_volatility, 2))
         matrix.append(row)
     return np.array(matrix)
