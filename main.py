@@ -57,7 +57,7 @@ if strike > 0 and time > 0 and rate > 0 and op > 0 and max_spot > 0 and max_y>0 
         annot=True, cmap='magma', ax=ax,
         xticklabels=x_labels, yticklabels=y_labels
     )
-    ax.set_title("Volatility Arbitrage (IV - RV) for CALL options")
+    ax.set_title("Volatility Arbitrage (RV - IV) for CALL options")
     ax.set_xlabel("Spot Price")
     ax.set_ylabel(st.session_state.y_axis)
     st.pyplot(fig)
@@ -72,7 +72,7 @@ if strike > 0 and time > 0 and rate > 0 and op > 0 and max_spot > 0 and max_y>0 
         annot=True, cmap='magma', ax=ax2,
         xticklabels=x_labels, yticklabels=y_labels
     )
-    ax2.set_title("Volatility Arbitrage (IV - RV) for PUT options")
+    ax2.set_title("Volatility Arbitrage (RV - IV) for PUT options")
     ax2.set_xlabel("Spot Price")
     ax2.set_ylabel(st.session_state.y_axis)
     st.pyplot(fig2)
