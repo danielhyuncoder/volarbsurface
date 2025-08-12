@@ -78,3 +78,10 @@ if strike > 0 and time > 0 and rate > 0 and op > 0 and max_spot > 0 and max_y>0 
     st.pyplot(fig2)
 else:
     st.write("Please input all the fields in order to see the heatmap visualizations.")
+
+
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8501))
+    sys.argv = ["streamlit", "run", "main.py", "--server.port", str(port), "--server.address", "0.0.0.0"]
+    sys.exit(stcli.main())
